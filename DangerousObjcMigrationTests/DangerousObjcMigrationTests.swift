@@ -19,7 +19,7 @@ final class DangerousObjcMigrationTests: XCTestCase {
     func testPassingNilToSwift() {
         let a: NSNumber? = nil
         print("a is \(String(describing: a))\n")
-        XCTAssertEqual("0", SomeObjcClass.passNilToSwift())
+        XCTAssertEqual(";:;:0;[]:0;", SomeObjcClass.passNilToSwift())
         
         // Below code are just copying the SomeObjcClass but this crashes "Unexpectedly found nil".
 //        let someObjcClass = SomeObjcClass()

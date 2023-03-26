@@ -8,7 +8,7 @@
 
 + (NSString *)passNilToSwift {
     SomeObjcClass *me = [SomeObjcClass new];
-    return [SomeSwiftClass processNonNullWithText:me.text number:me.number complex:me.complex];
+    return [SomeSwiftClass processNonNullWithText:me.text number:me.number complex:me.complex array:me.array];
 }
 
 - (NSNumber*)convertTimeInterval:(NSTimeInterval)timeInterval {

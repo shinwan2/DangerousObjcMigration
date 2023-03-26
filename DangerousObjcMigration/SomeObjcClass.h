@@ -9,9 +9,11 @@
 
 @interface SomeObjcClass : NSObject
 
-@property (readonly, nonatomic) NSString *text;
-@property (readonly, nonatomic) NSNumber *number;
-@property (readonly, nonatomic) ComplexObject *complex;
+@property (readonly, nonatomic, nullable) NSString *text;
+@property (readonly, nonatomic, nullable) NSNumber *number;
+@property (readonly, nonatomic, nullable) ComplexObject *complex;
+@property (readonly, nonatomic, nullable) NSURL *url;
+@property (readonly, nonatomic, nullable) NSArray<NSString *> *array;
 
 + (NSString *)passNilToSwift;
 - (NSNumber*)convertTimeInterval:(NSTimeInterval)timeInterval;
